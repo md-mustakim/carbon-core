@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@300;400;600;800&amp;display=swap"
       rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -85,453 +85,342 @@
     </script>
     <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
-        .carbon-texture {
-            background-image: linear-gradient(45deg, #0e0e0e 25%, transparent 25%), linear-gradient(-45deg, #0e0e0e 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #0e0e0e 75%), linear-gradient(-45deg, transparent 75%, #0e0e0e 75%);
-            background-size: 4px 4px;
-            background-color: #131313;
-        }
+        body { background-color: #131313; color: #e5e2e1; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
   </head>
-  <body
-    class="bg-background text-on-surface font-body selection:bg-tertiary selection:text-on-tertiary">
-    <!-- TopNavBar -->
+  <body class="font-body selection:bg-tertiary selection:text-on-tertiary">
+    <!-- Top Navigation -->
     <nav
       class="bg-neutral-950/80 backdrop-blur-xl docked full-width top-0 z-50 tonal-shift bg-neutral-900 sticky">
       <div
         class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
         <div class="flex items-center gap-8">
           <div class="flex items-center gap-3">
-            <img alt="THE MONOLITH Logo" class="h-8"
-              data-alt="minimalist architectural logo for a luxury watch brand with sharp geometric lines and metallic finish"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpL4gCIPu3SnuQ5mZFzntq2RdXyX3IWkz4y3OS7hgUXnrtfWcnwJ47EDcC4nTiMkItcPvJ6xC-_c_rENebKmiLL0mG6si_qCEWZmHdnoaah-4--UyrJt6Oq87syTV1TdJAAxwU5_v4CO_W8c_ONLTSPEtYrYPyiuMjfNYjuCBBuQzm0Tc1aGLL1UGViewJtWs0D9YxuCTyASpWRKvfcYzEfQb29NicVPm-N2X-XafB5BA7GU8AoGVQ1DwsqHBOiHaA70lU2DkIBctn" />
+            <img alt="Carbon &amp; Core Logo" class="h-8 w-8 object-contain"
+              data-alt="Minimalist geometric logo icon representing precision watch gears in brushed silver on a dark background"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX_3S0TGAGvP71hXI06J8JGdM2esf4FVxCqwtcXtju9pyy_pislfNWDcJ5V61B2Sa7gw5eussFc0HYGGxdIgWv2Q1aZ1z3FhaInTk67j2BCv1HWuLHgMfbqfzD1ltj1mRrOVirCK3p3JnVi1NCDT3oHH6g8CFcQ_nLFhmPZa2DECfF-HQQPi13JTLyRlTauxbHlTL-_iC1LrJbC9CXjlkwTUPXM-RnGJDMsfPNoAIlMvdAPmXzHnc9GGFaUYhwoztDHUQCpF_h_ycd" />
             <span
-              class="text-2xl font-serif font-bold tracking-tighter text-slate-100 uppercase">THE
+              class="text-2xl font-serif font-bold tracking-tighter text-slate-100">THE
               MONOLITH</span>
           </div>
-          <div class="hidden md:flex gap-8 ml-12">
+          <div class="hidden md:flex gap-8 items-center">
             <a
-              class="text-slate-500  border-slate-100 pb-1 font-sans uppercase tracking-[0.1em] text-xs transition-transform active:scale-95"
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
               href="inventory.html">Inventory</a>
             <a
-              class="text-slate-500 hover:text-slate-100 transition-colors duration-300 font-sans uppercase tracking-[0.1em] text-xs transition-transform active:scale-95"
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
               href="consignment.html">Consignment</a>
 
             <a
-              class="text-slate-100 border-b-2  transition-colors duration-300 font-sans uppercase tracking-[0.1em] text-xs transition-transform active:scale-95"
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-100 border-b-2 border-slate-100 pb-1"
               href="blog.html">Blog</a>
             <a
-              class="text-slate-500 hover:text-slate-100 transition-colors duration-300 font-sans uppercase tracking-[0.1em] text-xs transition-transform active:scale-95"
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
               href="contact.html">Contact</a>
           </div>
         </div>
-        <div class="flex items-center gap-8">
-          <div class="hidden lg:flex items-center gap-6">
+        <div class="flex items-center gap-6">
+          <div class="hidden lg:flex items-center gap-4">
             <button
-              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-300 hover:text-slate-100 transition-all duration-300">Sell
+              class="bg-transparent border border-outline-variant/15 text-primary px-6 py-2 text-xs font-sans uppercase tracking-widest hover:bg-surface-container-high transition-all">Sell
               a Watch</button>
             <button
-              class="bg-primary text-on-primary px-6 py-2 font-sans uppercase tracking-[0.1em] text-xs font-bold transition-all duration-300 hover:bg-secondary active:scale-95">Book
+              class="bg-primary text-on-primary px-6 py-2 text-xs font-sans uppercase tracking-widest hover:bg-secondary transition-all active:scale-95">Book
               Appointment</button>
           </div>
           <div class="flex items-center gap-4 text-slate-300">
             <span
-              class="material-symbols-outlined cursor-pointer hover:text-slate-100 transition-colors"
-              data-icon="search">search</span>
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">search</span>
             <span
-              class="material-symbols-outlined cursor-pointer hover:text-slate-100 transition-colors"
-              data-icon="shopping_bag">shopping_bag</span>
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">shopping_bag</span>
             <span
-              class="material-symbols-outlined cursor-pointer hover:text-slate-100 transition-colors"
-              data-icon="person">person</span>
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">person</span>
           </div>
         </div>
       </div>
     </nav>
-    <main class="min-h-screen pb-24">
-      <!-- Hero Section -->
-      <header
-        class="relative h-[409px] flex flex-col justify-end px-12 py-16 carbon-texture">
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
-        <div class="relative z-10 max-w-7xl">
-          <span
-            class="label-sm font-label uppercase tracking-[0.2em] text-tertiary-fixed-dim mb-4 block">Current
-            Collection</span>
-          <h1
-            class="display-lg font-headline text-6xl lg:text-8xl text-slate-100 tracking-tight leading-none mb-4">THE
-            CURATED<br />INVENTORY</h1>
+    <main class="min-h-screen">
+      <!-- Hero Editorial Section -->
+      <section
+        class="relative w-full h-[870px] flex items-end overflow-hidden bg-surface-container-lowest">
+        <div class="absolute inset-0 z-0">
+          <img
+            class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+            data-alt="Ultra-close macro photography of a complex mechanical watch movement with brass gears and silver screws under dramatic low lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz9L14SjfNDseFLzR7Pi1AooNLgJtsZWxISNVwZzpRBchBz8mviJ4-HXgMcvTpLoPnUby8r2AfJshq0ihc1rTifHOAVy49QuMuvOeJh24HG3Y6LtL_wEGWN8zUqQjTfx8X-pi3173KD6iJH5QuaIUI5jRKH_Ql49UX5Q_dUVvz70mfDT1oPKKsh7aMHK9uUoxYNbE0I34V7EyZaMgExrBSFygsS5fqFblZ3mVvzEpEM0x0XkBit216mucmvq0wyp8JYREzAd1jDAmi" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
         </div>
-      </header>
-      <!-- Catalog Section -->
-      <section class="px-12 grid grid-cols-12 gap-12 mt-12">
-        <!-- Sidebar Filters -->
-        <aside class="col-span-12 lg:col-span-3 space-y-12">
-          <div>
-            <h3
-              class="font-headline text-lg text-slate-100 mb-6 italic">Brand</h3>
-            <div class="flex flex-col gap-4">
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div
-                  class="w-4 h-4 border border-outline group-hover:border-primary transition-colors"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-400 group-hover:text-slate-100">Rolex</span>
-              </label>
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div
-                  class="w-4 h-4 border border-outline group-hover:border-primary transition-colors"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-400 group-hover:text-slate-100">Patek
-                  Philippe</span>
-              </label>
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div class="w-4 h-4 border border-primary bg-primary"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-100">Audemars
-                  Piguet</span>
-              </label>
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div
-                  class="w-4 h-4 border border-outline group-hover:border-primary transition-colors"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-400 group-hover:text-slate-100">Omega</span>
-              </label>
+        <div
+          class="relative z-10 px-12 md:px-24 pb-20 w-full max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+          <div class="md:col-span-8">
+            <div class="mb-6">
+              <span
+                class="font-sans text-xs uppercase tracking-[0.2em] text-tertiary-fixed-dim bg-tertiary-container px-3 py-1">Featured
+                Editorial</span>
             </div>
-          </div>
-          <div>
-            <h3
-              class="font-headline text-lg text-slate-100 mb-6 italic">Condition</h3>
-            <div class="flex flex-col gap-4">
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div
-                  class="w-4 h-4 border border-outline group-hover:border-primary transition-colors"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-400 group-hover:text-slate-100">New
-                  / Unworn</span>
-              </label>
-              <label class="flex items-center gap-3 cursor-pointer group">
-                <div
-                  class="w-4 h-4 border border-outline group-hover:border-primary transition-colors"></div>
-                <span
-                  class="font-label text-xs uppercase tracking-widest text-slate-400 group-hover:text-slate-100">Pre-Owned</span>
-              </label>
-            </div>
-          </div>
-          <div>
-            <h3 class="font-headline text-lg text-slate-100 mb-6 italic">Price
-              Range</h3>
-            <div class="space-y-4">
-              <div class="h-[2px] bg-outline-variant relative">
-                <div class="absolute left-1/4 right-0 h-full bg-primary"></div>
-                <div
-                  class="absolute left-1/4 top-1/2 -translate-y-1/2 w-3 h-3 bg-slate-100 border-4 border-background"></div>
-                <div
-                  class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-slate-100 border-4 border-background"></div>
-              </div>
-              <div
-                class="flex justify-between font-label text-[10px] uppercase tracking-tighter text-slate-500">
-                <span>$10,000</span>
-                <span>$500,000+</span>
-              </div>
-            </div>
-          </div>
-          <div class="pt-8">
-            <button
-              class="w-full border border-outline-variant py-4 font-label text-xs uppercase tracking-[0.2em] hover:bg-slate-100 hover:text-background transition-all duration-500">Reset
-              Filters</button>
-          </div>
-        </aside>
-        <!-- Product Grid -->
-        <div class="col-span-12 lg:col-span-9">
-          <div
-            class="flex justify-between items-end mb-12 border-b border-outline-variant/10 pb-6">
+            <h1
+              class="font-headline text-6xl md:text-8xl text-slate-100 tracking-tight leading-none mb-8">The
+              Architecture of Silence.</h1>
             <p
-              class="font-label text-xs uppercase tracking-widest text-slate-500">Showing
-              42 Masterpieces</p>
-            <div class="flex items-center gap-2 cursor-pointer group">
-              <span
-                class="font-label text-xs uppercase tracking-widest text-slate-100">Sort
-                by: Price High to Low</span>
-              <span
-                class="material-symbols-outlined text-sm text-slate-500 group-hover:text-slate-100"
-                data-icon="expand_more">expand_more</span>
-            </div>
+              class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">An
+              exploration into the silent engineering of high-complication
+              timepieces and the artisans who define the next century of
+              horology.</p>
           </div>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-16 gap-x-8">
-            <!-- Card 1 -->
-            <div class="group cursor-pointer">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="ultra close-up of a high-end luxury watch face with intricate mechanical details and brushed steel finish in dramatic low light"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhv30aDsQN7yp6g-HYDDC_hOofTr-WV86MNzQNyjJCONkh5O19eNjULEGAhN7lJqV2SfQK3olyPjx7C-kJy4IDe5SNK4U_WOf50LRnSgD4uJCwaJ-3R8yxZe81gtbs9PLnVC20nR37yoUXRFKdvxVTfccG38S2eP4eMF4OlCdeuYLWwDQLrCxO5Z4APLx0V7YrzAZH35RKvNuNww2ljRcNBz0INZTIeHRTOZE2p74vpGctZWgNm0ZoaMKCHjxRfOW4U1miVBrw9JM" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">2023</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Audemars
-                  Piguet</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Royal
-                  Oak "Jumbo"</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    Mint</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$98,500</span>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="group cursor-pointer">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="sleek professional photograph of a rolex daytona on a dark velvet cushion with moody cinematic lighting and deep shadows"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPPV3-BFQPEy1cv07ANqMQ8S8OlWlOdG2qcJVKw-2wKwX6bDlPRdYCHamz_z1-rO6wDfd2dr3ExPv_feMW571WjLHf-f4r-LXX6pKUOv2Oo6hdJSji9H8SkyjKwPNGUxr2kEG2q9RUXjpVKEII22b-mV3vDiSNGDZ10Lwdd6Xd-amopgEZ7nS2iBXME1jvHv6rOM1hXLxuIiz6xBaM-t7ISuKBpYZqvFzEtFFdo3GrE59B7KMu6VK16XzOMjmF7du07zKs5JyzHPt0" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">2021</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Rolex</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Cosmograph
-                  Daytona</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    Unworn</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$42,000</span>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="group cursor-pointer">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="patek philippe nautilus watch on a dark background showing the iconic blue textured dial and silver indices with elegant lighting"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLntCkiYqLZXO1SARK1-VoeWGKItuHPIUuu3ZddI9Ucr66Rax9CFWpzzszuR01YZdWPmF_zB92BfVrzJOJuCSMa9rgtqGbSl7dUP1BKROy0sECwoGvbG38oCYQGLg6jwBhOfXAvyVtBP_NYeSNAqYyzU3872A0vmCS96Kxxiei2E62yikakHr3A9n3kFOqq-QLhxlji9GfBbV1a7bnQeB66urGHU64PkQGEbcZGYtp671uNGIpfqgPCP1Cb8JKrCS6tw7FmDO65ylU" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">2024</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Patek
-                  Philippe</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Nautilus
-                  5811/1G</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    New</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$185,000</span>
-                </div>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="group cursor-pointer md:mt-12">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="modern omega speedmaster watch movement visible through a sapphire case back with high contrast industrial lighting on dark metal"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn-d6PMolLTbu81zexif69AXpgAK7Y05rF7Q29moJXzXwvbQJnG90uEhJildCWuOqFXEpGahT88_YMqNFKDaCAH1loEei5XL8-SW2iIZgfP8qmnO1YGnqoqT9a3Ow1IIpHfSbPKAODE8IhvpP7K6gIQp023qqzi_e58Jw9ne1GO9XPrHjFvQgzOfrs_xO8bkkRSRkYXR6wJrUq1hZQuIbYC24wLlXN8eGF10LKUiBp7jgJwtVzxp8XqmGaGBSbxrglWNe6rrCJBVk1" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">2022</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Omega</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Speedmaster
-                  Calibre 321</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    Excellent</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$14,800</span>
-                </div>
-              </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="group cursor-pointer md:mt-12">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="architectural view of a modern luxury watch store interior with dark glass displays and carbon fiber textures in a museum-like setting"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA1I2sijACPrLHMza1l-PQVF6omUfEVkNn5XWn_FHiv6yEqC2uQrSjhtnGhyl8Tltk48eFHWSgbeRJObCd6RYv8bCTZnBImihFCeoxOlxP2_sJZJshpx_cmB1su9hBpMMR0Nm2VK1fm9zoNR-fC9WiKGVQ7XhFJ7VD2WLjArzKgB4YpU-oxO4FdoDWpoNrepk0jQkLxZT6IaZM3YwJsFrlaLlAU6DpxwaztMshPsPfwfy-QQdSXSiv7dexKBhrPCBnLGzPGzf3P6n9" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">2020</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Audemars
-                  Piguet</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Code
-                  11.59 Chronograph</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    Pre-Owned</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$31,500</span>
-                </div>
-              </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="group cursor-pointer md:mt-12">
-              <div
-                class="relative aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden">
-                <img alt="Luxury Watch"
-                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  data-alt="vintage rolex submariner with aged patina on the indices and bezel shot in a moody atmosphere with soft light bouncing off the crystal"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxVwufmIX-bpUdJ-pDs2yloGKP0Y3kzRfvsJxL7CeK8nXzkZEOOCVU4Ewx_aRHNYXwyY2hjzDDpXhF1czalU3iIHmhVwmQmPSvRebGl7P8xlq0KfvLp0eqAFd8dcJ-x1g3y-ywNqaCgFiw4R7QCXp8V_acT_n4dqtkW2EnjB7LyELcDnoMS0j0rWWSV3ponlVLlfpP3J1GaBeOADxqzoTeedeWKAqJQK2-O2i91_Jm9bRK064GcRttSua02V48gq_K_lSw7M7oAxZ-" />
-                <div
-                  class="absolute top-4 left-4 bg-background/80 backdrop-blur px-3 py-1">
-                  <span
-                    class="font-label text-[10px] uppercase tracking-widest text-slate-300">1998</span>
-                </div>
-              </div>
-              <div class="space-y-2">
-                <span
-                  class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary-fixed-dim">Rolex</span>
-                <h2
-                  class="font-headline text-2xl text-slate-100 group-hover:text-primary transition-colors">Submariner
-                  14060</h2>
-                <div class="flex justify-between items-center pt-2">
-                  <span class="font-label text-sm text-slate-500">Condition:
-                    Vintage</span>
-                  <span
-                    class="font-headline text-lg text-slate-100">$12,900</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-24 flex justify-center">
-            <button
-              class="px-12 py-5 border border-outline-variant group relative overflow-hidden transition-all duration-500 hover:border-primary">
+            class="md:col-span-4 flex flex-col items-start md:items-end gap-6">
+            <div class="text-left md:text-right">
               <span
-                class="relative z-10 font-label text-xs uppercase tracking-[0.3em] text-slate-100 transition-colors">Load
-                More Assets</span>
-              <div
-                class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-            </button>
+                class="font-sans text-[10px] uppercase tracking-[0.3em] text-on-primary-container">Date</span>
+              <p class="font-body text-sm text-slate-300">October 24, 2024</p>
+            </div>
+            <div class="text-left md:text-right">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.3em] text-on-primary-container">Reading
+                Time</span>
+              <p class="font-body text-sm text-slate-300">12 Minutes</p>
+            </div>
+            <button
+              class="bg-primary text-on-primary px-10 py-4 text-sm font-sans uppercase tracking-widest mt-4 hover:bg-secondary transition-all">Read
+              Story</button>
           </div>
+        </div>
+      </section>
+      <!-- Category Filter -->
+      <section
+        class="bg-surface-container-low border-y border-outline-variant/10">
+        <div
+          class="max-w-[1920px] mx-auto px-12 md:px-24 flex overflow-x-auto no-scrollbar py-8 gap-12 items-center">
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-100 whitespace-nowrap"
+            href="#">All Insights</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Market Trends</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Maintenance</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Collector Spotlights</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Brand Heritage</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Technical Specs</a>
+        </div>
+      </section>
+      <!-- Bento Editorial Grid -->
+      <section class="py-24 px-12 md:px-24 max-w-[1920px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Large Vertical Card -->
+          <article
+            class="md:col-span-4 group cursor-pointer bg-surface-container hover:bg-surface-container-high transition-colors">
+            <div class="h-[600px] overflow-hidden bg-surface-container-low">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Luxury watch boutique interior with dark wood paneling, velvet displays, and subtle spotlighting on vintage timepieces"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiC1pwHeUioJkiJvvC6NykasJfLi0bvAASDPuED2MsjBOZBk3d09fEqQNT72UjFz5xSRRtaEwN-cAa1YcJEaYmipCaLcbivhTkl3soWjZCuYQAj5tQU77300Cpdj17B3rAqu50RZ7CnhkLXvR0eRL7uw53aAbOLGUY_RRcPiK5uXyEiXvKaavaVKzS4sT4mc2B1Jlmggs1Gj4gTEa5Z2wmxuYLBy_iWabwoc--tuggmpOw5ylHkmk8_GIKlJ0QteZ33b7cj6i-NkSG" />
+            </div>
+            <div class="p-8">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.2em] text-tertiary">Market
+                Analysis</span>
+              <h3
+                class="font-headline text-3xl text-slate-100 mt-4 leading-tight">Q4
+                Resale Trends: The Rise of the Independent Artisan.</h3>
+              <p
+                class="mt-6 font-body text-on-surface-variant text-sm leading-relaxed">Data
+                suggests a significant pivot toward low-volume,
+                high-craftsmanship independent brands over traditional
+                powerhouses.</p>
+            </div>
+          </article>
+          <!-- Top Horizontal Card -->
+          <article
+            class="md:col-span-8 group cursor-pointer flex flex-col md:flex-row bg-surface-container hover:bg-surface-container-high transition-colors">
+            <div
+              class="md:w-1/2 h-full overflow-hidden bg-surface-container-low">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Overhead view of watchmaker tools, tweezers, small gears, and a magnifying loupe arranged neatly on a grey workbench"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARvK2q9YLv2GxFVz766mARIAne9_aYG4eGb_oToRxJbk2w_CgODpUCUgMjSKvRaI0j7LiTExT4gXkJsDoYKTnMbrn58RxGBYUasGhNyhbHlpu7_CAJiIuxX5jygWzH0tpeGo6of_ahzjrtb5-OnMRRy5hDfYpR_KKdgVAKWGE9m3Y4edZEjIwfdhNo8iwfCdP7yYx_6APaiiYY2es1Hb8gYtkIrjmtMpxSskbNZYt3wpSE0r15bFXd660RfAp4jrCUsEmBbbZ0CnFb" />
+            </div>
+            <div class="md:w-1/2 p-12 flex flex-col justify-center">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.2em] text-tertiary">Maintenance</span>
+              <h3
+                class="font-headline text-4xl text-slate-100 mt-6 leading-tight">The
+                Art of the Caliber Service.</h3>
+              <p
+                class="mt-6 font-body text-on-surface-variant text-base leading-relaxed">Why
+                your mechanical investment requires a decade-based overhaul
+                strategy to maintain its horological integrity.</p>
+              <div class="mt-10 border-t border-outline-variant/20 pt-6">
+                <a
+                  class="font-sans text-xs uppercase tracking-[0.2em] text-slate-100 flex items-center gap-2"
+                  href="#">
+                  Discover More <span
+                    class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Bottom Three-Column Secondary Stories -->
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Person wearing a tailored charcoal suit adjusting a high-end luxury watch on their wrist in soft evening light"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8LBhNkcbEWdUBNdBaR1vDW8ycZGuFABqgD06ghmHQw-VztZc-oIn_2U3I6P4SdnJhg8axro0wyNtxy-cBWMKff_PlsMAXgPjPXVYo5IeWHmDFXG2G45gSMLwgWkH1UpCJBCmeHLEIeSm6fYY0-eKDidAxANkeH-iLvj4eLLdYdMi2GfIGS1RMLDBsOzRe1dxQfYVU55p5wXY74io3egrvTZDFR2MOAxW5yovJRDk1j0xrQi1FoGdE8Q77AZzELE2Pt7VsP_1wTx1Z" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Collector
+              Spotlight</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">Inside the
+              Vault: A Silicon Valley CEO’s Patek Collection.</h3>
+          </article>
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Elegant brown leather watch strap with detailed stitching resting on a dark velvet surface beside a silver watch case"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAd3ctPN1AD1LxaE_kl4J8r1m5O3fAZe2sxq2h7J7WMy7-x-x-T0ejLai9aL4R-WaJdRLH5q4AaXQTaei7IuUvnZrElxw0hTt2p_tyiI3rFoPCoyk-rVI4ZOETRiFJk6ISpo2DSg0Az0gqZ7UxqryPN1W7RIrYoD5c51_GMRuLucZN7d9g5OQcp9GzyltZo2KBdzdmcwF5fdaOn9oPSoEQNPoaqjFUhnzlJVNx8DiwpCG6zinP3Ai8qTsl5ivhSqp8CeuhFiik0a9N" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Heritage</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">The Evolution
+              of the Oyster Case: A Century of Protection.</h3>
+          </article>
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Modern minimalist clock tower silhouette against a deep indigo twilight sky with subtle light painting effects"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqbib5E_1kqbSU2CZQjT6N1hxd-U_2PRiHBG5mnihsTCXWYQyd4ZzTGW9uBt4WbelaTV21GC44eqMAlLaRR4QDEa3ILFjMbfKi3G7QA02mJ-KcvONoODfh0k1QSEisYDbWDsw0HVyqVSFDbGCV1W2nW2gGWpTKpTvXOdxqQG1_brKY3nY06xiIIBy2nqqytRCVh6jPxVUaeBoSkDG5_ysylZk8jUMC5VgrZE9OrZAk42WLw-wUSde3nbajvNv5CswPfWzjOshmCoEY" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Technical</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">Silicon vs.
+              Steel: The Modern Balance Spring Debate.</h3>
+          </article>
+        </div>
+      </section>
+      <!-- Newsletter / Subscription Glass Block -->
+      <section
+        class="py-24 bg-surface-container-lowest overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary-container rounded-full blur-[160px] -translate-y-1/2 translate-x-1/2"></div>
+          <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-tertiary-container rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-12 text-center">
+          <span
+            class="font-sans text-xs uppercase tracking-[0.4em] text-tertiary block mb-8">The
+            Monolith Dispatch</span>
+          <h2
+            class="font-headline text-5xl md:text-7xl text-slate-100 mb-10 tracking-tight">Curated
+            insight, delivered bi-weekly.</h2>
+          <p
+            class="font-body text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">Join
+            our inner circle for early access to market reports, private
+            inventory releases, and editorial long-reads.</p>
+          <form
+            class="flex flex-col md:flex-row gap-0 border-b border-outline-variant">
+            <input
+              class="flex-grow bg-transparent border-none py-6 px-4 text-slate-100 placeholder:text-slate-600 focus:ring-0 font-sans uppercase text-sm tracking-widest"
+              placeholder="YOUR EMAIL ADDRESS" type="email" />
+            <button
+              class="bg-primary text-on-primary px-12 py-6 text-sm font-sans uppercase tracking-[0.2em] hover:bg-secondary transition-all"
+              type="submit">Subscribe</button>
+          </form>
+          <p
+            class="mt-8 font-sans text-[10px] uppercase tracking-widest text-slate-600">Privacy
+            is paramount. Unsubscribe at any time.</p>
         </div>
       </section>
     </main>
     <!-- Footer -->
     <footer
-      class="bg-neutral-950 pt-20 pb-12 border-t border-outline-variant/10">
+      class="bg-neutral-950 full-width bottom-0 tonal-shift bg-neutral-900/50">
       <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-24 py-20 w-full max-w-[1920px] mx-auto tonal-shift bg-neutral-900/50">
-        <div class="col-span-1 space-y-8">
-          <div class="flex flex-col gap-4">
-            <img alt="THE MONOLITH Logo" class="w-12 h-12"
-              data-alt="abstract monochromatic logo for a luxury watch boutique with geometric diamond shapes"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzS9OOj1Idi8m8VCXNbCTFWgaDEi1dybkIYkBQ5HnLm2fHMBigBbBzOZTE3tb8aQ8P9nHvQh88bx2wXetiTPM6jeDYeAzRYojCkDGs6_fHYwgO7c-cvywN8JJSE075AyXaTvsJU4ig0nGWMqneJeJIcuvw-0BOKnFd1ILXdPqe700oGQ3MjHXIK92xlF07YADZdWIGxtbGARGNlbc1mONeIuDKyb5-qS_j7yHD_GGlKJQPc9EwNod8lM-0X5LjRxmKtyYe458zflZn" />
-            <span
-              class="font-serif text-3xl font-black text-slate-100 uppercase leading-none">THE<br />HOROLOGICAL<br />MONOLITH</span>
-          </div>
-          <p class="font-sans text-sm tracking-wide text-slate-400 max-w-xs">The
-            world's premier destination for highly curated, investment-grade
-            timepieces. Where heritage meets the cutting edge.</p>
-        </div>
-        <div class="col-span-1">
-          <h4 class="font-serif text-lg text-slate-100 mb-8 italic">Quick
-            Links</h4>
-          <ul class="space-y-4">
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Privacy Policy</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Terms of Service</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Shipping &amp; Returns</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Authentication</a></li>
-          </ul>
-        </div>
-        <div class="col-span-1">
-          <h4 class="font-serif text-lg text-slate-100 mb-8 italic">About
-            Us</h4>
-          <ul class="space-y-4">
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Our Story</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Contact Us</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Press Relations</a></li>
-            <li><a
-                class="text-slate-500 hover:text-slate-200 transition-colors font-sans text-sm tracking-wide"
-                href="#">Career</a></li>
-          </ul>
-        </div>
-        <div class="col-span-1">
-          <h4 class="font-serif text-lg text-slate-100 mb-8 italic">The
-            Vault</h4>
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 md:px-24 py-20 w-full max-w-[1920px] mx-auto">
+        <div class="md:col-span-1">
+          <span
+            class="font-serif text-3xl font-black text-slate-100 uppercase block mb-6">THE
+            MONOLITH</span>
           <p
-            class="font-sans text-sm tracking-wide text-slate-500 mb-6 italic">Subscribe
-            to receive first access to new inventory releases.</p>
-          <div class="relative border-b border-outline-variant">
-            <input
-              class="bg-transparent border-none w-full py-2 font-label text-[10px] uppercase tracking-widest text-slate-100 focus:ring-0 placeholder:text-slate-700"
-              placeholder="ENTER EMAIL" type="email" />
-            <button
-              class="absolute right-0 top-1/2 -translate-y-1/2 text-tertiary">
-              <span class="material-symbols-outlined text-lg"
-                data-icon="arrow_forward">arrow_forward</span>
-            </button>
+            class="font-sans text-sm text-slate-400 leading-relaxed max-w-xs">The
+            premier destination for the acquisition and preservation of
+            investment-grade horology.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Navigation</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Our Story</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Inventory</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Consignment</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Client
+            Services</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Authentication</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Shipping &amp; Returns</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Privacy Policy</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Social Connect</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Instagram</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">YouTube</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">LinkedIn</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Twitter (X)</a>
           </div>
         </div>
       </div>
       <div
-        class="mt-20 px-24 flex flex-col md:flex-row justify-between items-center gap-8">
-        <p
+        class="px-12 md:px-24 py-10 border-t border-outline-variant/10 text-center md:text-left">
+        <span
           class="font-sans text-[10px] uppercase tracking-[0.2em] text-slate-500">©
-          2024 THE HOROLOGICAL MONOLITH. ALL RIGHTS RESERVED.</p>
-        <div class="flex gap-8">
-          <a class="text-slate-500 hover:text-slate-100 transition-colors"
-            href="#"><span class="material-symbols-outlined"
-              data-icon="share">share</span></a>
-          <a class="text-slate-500 hover:text-slate-100 transition-colors"
-            href="#"><span class="material-symbols-outlined"
-              data-icon="public">public</span></a>
-          <a class="text-slate-500 hover:text-slate-100 transition-colors"
-            href="#"><span class="material-symbols-outlined"
-              data-icon="fingerprint">fingerprint</span></a>
-        </div>
+          2024 THE HOROLOGICAL MONOLITH. ALL RIGHTS RESERVED.</span>
       </div>
     </footer>
   </body></html>
