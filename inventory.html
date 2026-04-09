@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@300;400;600;800&amp;display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#3e495d",
+                    "surface-dim": "#131313",
+                    "tertiary-fixed-dim": "#b9c7e0",
+                    "surface-tint": "#c1c7cf",
+                    "on-tertiary": "#233144",
+                    "on-primary": "#2b3137",
+                    "secondary-fixed-dim": "#bcc7de",
+                    "primary": "#c1c7cf",
+                    "on-primary-fixed-variant": "#41474e",
+                    "error": "#ffb4ab",
+                    "surface": "#131313",
+                    "on-tertiary-fixed-variant": "#3a485c",
+                    "on-secondary": "#263143",
+                    "on-surface-variant": "#c6c6cd",
+                    "outline-variant": "#45464d",
+                    "surface-container-high": "#2a2a2a",
+                    "primary-fixed-dim": "#c1c7cf",
+                    "surface-container-low": "#1c1b1b",
+                    "inverse-primary": "#595f66",
+                    "tertiary": "#b9c7e0",
+                    "secondary": "#bcc7de",
+                    "on-primary-container": "#7b8189",
+                    "background": "#131313",
+                    "surface-container": "#201f1f",
+                    "on-primary-fixed": "#161c22",
+                    "on-secondary-fixed": "#111c2d",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#aeb9d0",
+                    "surface-variant": "#353534",
+                    "on-error": "#690005",
+                    "surface-bright": "#3a3939",
+                    "secondary-fixed": "#d8e3fb",
+                    "primary-container": "#12181e",
+                    "on-background": "#e5e2e1",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-highest": "#353534",
+                    "on-surface": "#e5e2e1",
+                    "primary-fixed": "#dde3eb",
+                    "tertiary-container": "#09182a",
+                    "on-tertiary-container": "#738298",
+                    "error-container": "#93000a",
+                    "outline": "#909097",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed": "#d5e3fd",
+                    "on-tertiary-fixed": "#0d1c2f",
+                    "inverse-surface": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #131313; color: #e5e2e1; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+  </head>
+  <body class="font-body selection:bg-tertiary selection:text-on-tertiary">
+    <!-- Top Navigation -->
+    <nav
+      class="bg-neutral-950/80 backdrop-blur-xl docked full-width top-0 z-50 tonal-shift bg-neutral-900 sticky">
+      <div
+        class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-3">
+            <img alt="Carbon &amp; Core Logo" class="h-8 w-8 object-contain"
+              data-alt="Minimalist geometric logo icon representing precision watch gears in brushed silver on a dark background"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX_3S0TGAGvP71hXI06J8JGdM2esf4FVxCqwtcXtju9pyy_pislfNWDcJ5V61B2Sa7gw5eussFc0HYGGxdIgWv2Q1aZ1z3FhaInTk67j2BCv1HWuLHgMfbqfzD1ltj1mRrOVirCK3p3JnVi1NCDT3oHH6g8CFcQ_nLFhmPZa2DECfF-HQQPi13JTLyRlTauxbHlTL-_iC1LrJbC9CXjlkwTUPXM-RnGJDMsfPNoAIlMvdAPmXzHnc9GGFaUYhwoztDHUQCpF_h_ycd" />
+            <span
+              class="text-2xl font-serif font-bold tracking-tighter text-slate-100">THE
+              MONOLITH</span>
+          </div>
+          <div class="hidden md:flex gap-8 items-center">
+            <a
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
+              href="inventory.html">Inventory</a>
+            <a
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
+              href="consignment.html">Consignment</a>
+
+            <a
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-100 border-b-2 border-slate-100 pb-1"
+              href="blog.html">Blog</a>
+            <a
+              class="font-sans uppercase tracking-[0.1em] text-xs text-slate-500 hover:text-slate-100 transition-colors duration-300"
+              href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-6">
+          <div class="hidden lg:flex items-center gap-4">
+            <button
+              class="bg-transparent border border-outline-variant/15 text-primary px-6 py-2 text-xs font-sans uppercase tracking-widest hover:bg-surface-container-high transition-all">Sell
+              a Watch</button>
+            <button
+              class="bg-primary text-on-primary px-6 py-2 text-xs font-sans uppercase tracking-widest hover:bg-secondary transition-all active:scale-95">Book
+              Appointment</button>
+          </div>
+          <div class="flex items-center gap-4 text-slate-300">
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">search</span>
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">shopping_bag</span>
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-slate-100">person</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="min-h-screen">
+      <!-- Hero Editorial Section -->
+      <section
+        class="relative w-full h-[870px] flex items-end overflow-hidden bg-surface-container-lowest">
+        <div class="absolute inset-0 z-0">
+          <img
+            class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+            data-alt="Ultra-close macro photography of a complex mechanical watch movement with brass gears and silver screws under dramatic low lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz9L14SjfNDseFLzR7Pi1AooNLgJtsZWxISNVwZzpRBchBz8mviJ4-HXgMcvTpLoPnUby8r2AfJshq0ihc1rTifHOAVy49QuMuvOeJh24HG3Y6LtL_wEGWN8zUqQjTfx8X-pi3173KD6iJH5QuaIUI5jRKH_Ql49UX5Q_dUVvz70mfDT1oPKKsh7aMHK9uUoxYNbE0I34V7EyZaMgExrBSFygsS5fqFblZ3mVvzEpEM0x0XkBit216mucmvq0wyp8JYREzAd1jDAmi" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+        </div>
+        <div
+          class="relative z-10 px-12 md:px-24 pb-20 w-full max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+          <div class="md:col-span-8">
+            <div class="mb-6">
+              <span
+                class="font-sans text-xs uppercase tracking-[0.2em] text-tertiary-fixed-dim bg-tertiary-container px-3 py-1">Featured
+                Editorial</span>
+            </div>
+            <h1
+              class="font-headline text-6xl md:text-8xl text-slate-100 tracking-tight leading-none mb-8">The
+              Architecture of Silence.</h1>
+            <p
+              class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">An
+              exploration into the silent engineering of high-complication
+              timepieces and the artisans who define the next century of
+              horology.</p>
+          </div>
+          <div
+            class="md:col-span-4 flex flex-col items-start md:items-end gap-6">
+            <div class="text-left md:text-right">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.3em] text-on-primary-container">Date</span>
+              <p class="font-body text-sm text-slate-300">October 24, 2024</p>
+            </div>
+            <div class="text-left md:text-right">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.3em] text-on-primary-container">Reading
+                Time</span>
+              <p class="font-body text-sm text-slate-300">12 Minutes</p>
+            </div>
+            <button
+              class="bg-primary text-on-primary px-10 py-4 text-sm font-sans uppercase tracking-widest mt-4 hover:bg-secondary transition-all">Read
+              Story</button>
+          </div>
+        </div>
+      </section>
+      <!-- Category Filter -->
+      <section
+        class="bg-surface-container-low border-y border-outline-variant/10">
+        <div
+          class="max-w-[1920px] mx-auto px-12 md:px-24 flex overflow-x-auto no-scrollbar py-8 gap-12 items-center">
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-100 whitespace-nowrap"
+            href="#">All Insights</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Market Trends</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Maintenance</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Collector Spotlights</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Brand Heritage</a>
+          <a
+            class="font-sans text-xs uppercase tracking-[0.2em] text-slate-500 hover:text-slate-100 whitespace-nowrap transition-colors"
+            href="#">Technical Specs</a>
+        </div>
+      </section>
+      <!-- Bento Editorial Grid -->
+      <section class="py-24 px-12 md:px-24 max-w-[1920px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <!-- Large Vertical Card -->
+          <article
+            class="md:col-span-4 group cursor-pointer bg-surface-container hover:bg-surface-container-high transition-colors">
+            <div class="h-[600px] overflow-hidden bg-surface-container-low">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Luxury watch boutique interior with dark wood paneling, velvet displays, and subtle spotlighting on vintage timepieces"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiC1pwHeUioJkiJvvC6NykasJfLi0bvAASDPuED2MsjBOZBk3d09fEqQNT72UjFz5xSRRtaEwN-cAa1YcJEaYmipCaLcbivhTkl3soWjZCuYQAj5tQU77300Cpdj17B3rAqu50RZ7CnhkLXvR0eRL7uw53aAbOLGUY_RRcPiK5uXyEiXvKaavaVKzS4sT4mc2B1Jlmggs1Gj4gTEa5Z2wmxuYLBy_iWabwoc--tuggmpOw5ylHkmk8_GIKlJ0QteZ33b7cj6i-NkSG" />
+            </div>
+            <div class="p-8">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.2em] text-tertiary">Market
+                Analysis</span>
+              <h3
+                class="font-headline text-3xl text-slate-100 mt-4 leading-tight">Q4
+                Resale Trends: The Rise of the Independent Artisan.</h3>
+              <p
+                class="mt-6 font-body text-on-surface-variant text-sm leading-relaxed">Data
+                suggests a significant pivot toward low-volume,
+                high-craftsmanship independent brands over traditional
+                powerhouses.</p>
+            </div>
+          </article>
+          <!-- Top Horizontal Card -->
+          <article
+            class="md:col-span-8 group cursor-pointer flex flex-col md:flex-row bg-surface-container hover:bg-surface-container-high transition-colors">
+            <div
+              class="md:w-1/2 h-full overflow-hidden bg-surface-container-low">
+              <img
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                data-alt="Overhead view of watchmaker tools, tweezers, small gears, and a magnifying loupe arranged neatly on a grey workbench"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARvK2q9YLv2GxFVz766mARIAne9_aYG4eGb_oToRxJbk2w_CgODpUCUgMjSKvRaI0j7LiTExT4gXkJsDoYKTnMbrn58RxGBYUasGhNyhbHlpu7_CAJiIuxX5jygWzH0tpeGo6of_ahzjrtb5-OnMRRy5hDfYpR_KKdgVAKWGE9m3Y4edZEjIwfdhNo8iwfCdP7yYx_6APaiiYY2es1Hb8gYtkIrjmtMpxSskbNZYt3wpSE0r15bFXd660RfAp4jrCUsEmBbbZ0CnFb" />
+            </div>
+            <div class="md:w-1/2 p-12 flex flex-col justify-center">
+              <span
+                class="font-sans text-[10px] uppercase tracking-[0.2em] text-tertiary">Maintenance</span>
+              <h3
+                class="font-headline text-4xl text-slate-100 mt-6 leading-tight">The
+                Art of the Caliber Service.</h3>
+              <p
+                class="mt-6 font-body text-on-surface-variant text-base leading-relaxed">Why
+                your mechanical investment requires a decade-based overhaul
+                strategy to maintain its horological integrity.</p>
+              <div class="mt-10 border-t border-outline-variant/20 pt-6">
+                <a
+                  class="font-sans text-xs uppercase tracking-[0.2em] text-slate-100 flex items-center gap-2"
+                  href="#">
+                  Discover More <span
+                    class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Bottom Three-Column Secondary Stories -->
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Person wearing a tailored charcoal suit adjusting a high-end luxury watch on their wrist in soft evening light"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8LBhNkcbEWdUBNdBaR1vDW8ycZGuFABqgD06ghmHQw-VztZc-oIn_2U3I6P4SdnJhg8axro0wyNtxy-cBWMKff_PlsMAXgPjPXVYo5IeWHmDFXG2G45gSMLwgWkH1UpCJBCmeHLEIeSm6fYY0-eKDidAxANkeH-iLvj4eLLdYdMi2GfIGS1RMLDBsOzRe1dxQfYVU55p5wXY74io3egrvTZDFR2MOAxW5yovJRDk1j0xrQi1FoGdE8Q77AZzELE2Pt7VsP_1wTx1Z" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Collector
+              Spotlight</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">Inside the
+              Vault: A Silicon Valley CEO’s Patek Collection.</h3>
+          </article>
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Elegant brown leather watch strap with detailed stitching resting on a dark velvet surface beside a silver watch case"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAd3ctPN1AD1LxaE_kl4J8r1m5O3fAZe2sxq2h7J7WMy7-x-x-T0ejLai9aL4R-WaJdRLH5q4AaXQTaei7IuUvnZrElxw0hTt2p_tyiI3rFoPCoyk-rVI4ZOETRiFJk6ISpo2DSg0Az0gqZ7UxqryPN1W7RIrYoD5c51_GMRuLucZN7d9g5OQcp9GzyltZo2KBdzdmcwF5fdaOn9oPSoEQNPoaqjFUhnzlJVNx8DiwpCG6zinP3Ai8qTsl5ivhSqp8CeuhFiik0a9N" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Heritage</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">The Evolution
+              of the Oyster Case: A Century of Protection.</h3>
+          </article>
+          <article class="md:col-span-4 group cursor-pointer">
+            <div
+              class="aspect-video overflow-hidden bg-surface-container-low mb-6">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0"
+                data-alt="Modern minimalist clock tower silhouette against a deep indigo twilight sky with subtle light painting effects"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqbib5E_1kqbSU2CZQjT6N1hxd-U_2PRiHBG5mnihsTCXWYQyd4ZzTGW9uBt4WbelaTV21GC44eqMAlLaRR4QDEa3ILFjMbfKi3G7QA02mJ-KcvONoODfh0k1QSEisYDbWDsw0HVyqVSFDbGCV1W2nW2gGWpTKpTvXOdxqQG1_brKY3nY06xiIIBy2nqqytRCVh6jPxVUaeBoSkDG5_ysylZk8jUMC5VgrZE9OrZAk42WLw-wUSde3nbajvNv5CswPfWzjOshmCoEY" />
+            </div>
+            <span
+              class="font-sans text-[10px] uppercase tracking-[0.2em] text-on-primary-container">Technical</span>
+            <h3 class="font-headline text-xl text-slate-100 mt-3">Silicon vs.
+              Steel: The Modern Balance Spring Debate.</h3>
+          </article>
+        </div>
+      </section>
+      <!-- Newsletter / Subscription Glass Block -->
+      <section
+        class="py-24 bg-surface-container-lowest overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary-container rounded-full blur-[160px] -translate-y-1/2 translate-x-1/2"></div>
+          <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-tertiary-container rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-12 text-center">
+          <span
+            class="font-sans text-xs uppercase tracking-[0.4em] text-tertiary block mb-8">The
+            Monolith Dispatch</span>
+          <h2
+            class="font-headline text-5xl md:text-7xl text-slate-100 mb-10 tracking-tight">Curated
+            insight, delivered bi-weekly.</h2>
+          <p
+            class="font-body text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">Join
+            our inner circle for early access to market reports, private
+            inventory releases, and editorial long-reads.</p>
+          <form
+            class="flex flex-col md:flex-row gap-0 border-b border-outline-variant">
+            <input
+              class="flex-grow bg-transparent border-none py-6 px-4 text-slate-100 placeholder:text-slate-600 focus:ring-0 font-sans uppercase text-sm tracking-widest"
+              placeholder="YOUR EMAIL ADDRESS" type="email" />
+            <button
+              class="bg-primary text-on-primary px-12 py-6 text-sm font-sans uppercase tracking-[0.2em] hover:bg-secondary transition-all"
+              type="submit">Subscribe</button>
+          </form>
+          <p
+            class="mt-8 font-sans text-[10px] uppercase tracking-widest text-slate-600">Privacy
+            is paramount. Unsubscribe at any time.</p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-neutral-950 full-width bottom-0 tonal-shift bg-neutral-900/50">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 md:px-24 py-20 w-full max-w-[1920px] mx-auto">
+        <div class="md:col-span-1">
+          <span
+            class="font-serif text-3xl font-black text-slate-100 uppercase block mb-6">THE
+            MONOLITH</span>
+          <p
+            class="font-sans text-sm text-slate-400 leading-relaxed max-w-xs">The
+            premier destination for the acquisition and preservation of
+            investment-grade horology.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Navigation</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Our Story</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Inventory</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Consignment</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Client
+            Services</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Authentication</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Shipping &amp; Returns</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Privacy Policy</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg text-slate-100 mb-8">Social Connect</h4>
+          <div class="flex flex-col gap-4">
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Instagram</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">YouTube</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">LinkedIn</a>
+            <a
+              class="font-sans text-sm tracking-wide text-slate-500 hover:text-slate-200 transition-colors"
+              href="#">Twitter (X)</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="px-12 md:px-24 py-10 border-t border-outline-variant/10 text-center md:text-left">
+        <span
+          class="font-sans text-[10px] uppercase tracking-[0.2em] text-slate-500">©
+          2024 THE HOROLOGICAL MONOLITH. ALL RIGHTS RESERVED.</span>
+      </div>
+    </footer>
+  </body></html>
